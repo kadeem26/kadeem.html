@@ -1,0 +1,207 @@
+/* =======================================
+    style.css
+    use this file for your custom styles
+========================================== */
+
+/* use a box model that makes sense */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* set the default color, font-size, and line height */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1500px; /* change this width to make a wider page!*/
+  padding: 0 1em; /* 1em of padding on the left and right side */
+}
+
+/* make images and embedded media fluid */
+img,
+object {
+  max-width: 100%;
+}
+
+/* type hierarchy- change for your project */
+h1 {
+  font-size: 3em; /* 48px */
+}
+
+h2 {
+  font-size: 2.25em /* 36px */
+}
+
+h3 {
+  font-size: 1.75em /* 28px */
+}
+
+h4 {
+  font-size: 1.125em /*18px */
+}
+
+/* navigation list styles */
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =======================================
+    author styles
+    place your custom styles below here
+========================================== */
+
+header{
+  color: white;
+}
+
+body{
+  background-color: black;
+}
+.navigation a,
+.navigation a:visited
+{
+  color: pink;
+  font-size: 33px;
+
+}
+.navigation a:hover{
+color:grey;
+}
+.navigation li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.animation li{
+  text-align: right;
+}
+h1{
+  text-align: center;
+  color: #04DAF4;
+  font-size: 100px;
+}
+.navigation{
+  text-align: center;
+}
+p{
+  color: grey;
+  font-size: 25px;
+}
+.lilsweeney{
+  float:left;
+  width: 20%;
+  margin-top: 33px;
+}
+.jamaica{
+  background-color: black;
+  padding: 30px;
+}
+
+.lacrosse{
+  background-color: black;
+  padding: 30px;
+}
+
+.laxpic{
+  float: right;
+  width: 25%;
+  margin-top: 10px;
+
+}
+.lil_d{
+  float:left;
+  width: 25%;
+  margin-top: 10px;
+}
+
+.dmd{
+  color: pink;
+}
+.vid{
+  padding: 25px;
+}
+.REEL{
+  font-size: 40px;
+}
+.recycle{
+  text-align: center;
+}
+.mation{
+  font-size: 40px;
+  text-align: center;
+}
+.sec{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================
+    Layout
+    keep this at the bottom
+========================================== */
+
+@media (min-width: 620px) {
+  .column {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .column.full {
+    width: 100%;
+  }
+
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  .column.half {
+    width: 50%;
+  }
+
+  .column.third {
+    width: 33.3%;
+  }
+
+  .column.fourth {
+    width: 25%;
+  }
+
+  .column.flow-opposite {
+    float: right;
+  }
+}
+
+
+/* row used as a clearfix to clear floats */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  *zoom: 1;
+}
